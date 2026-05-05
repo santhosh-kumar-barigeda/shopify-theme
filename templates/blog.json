@@ -1,0 +1,6 @@
+{
+  "sections": {
+    "listing": { "type": "blog-listing" }
+  },
+  "order": ["listing"]
+}

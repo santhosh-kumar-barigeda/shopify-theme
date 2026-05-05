@@ -8,16 +8,16 @@
           {{ section.settings.about_label }}
         </button>
         <ul class="utility-bar__dropdown">
-          <li><a href="#">Our Story</a></li>
-          <li><a href="#">Our Shoes</a></li>
-          <li><a href="#">Our Inserts</a></li>
-          <li><a href="#">Our Socks</a></li>
-          <li><a href="#">Our Compression Wear</a></li>
-          <li><a href="#">Our Orthotic Lab</a></li>
-          <li><a href="#">Medicare</a></li>
-          <li><a href="#">Education</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Catalog</a></li>
+          <li><a href="{{ routes.root_url }}pages/our-story">Our Story</a></li>
+          <li><a href="{{ routes.root_url }}pages/our-shoes">Our Shoes</a></li>
+          <li><a href="{{ routes.root_url }}pages/our-inserts">Our Inserts</a></li>
+          <li><a href="{{ routes.root_url }}pages/our-socks">Our Socks</a></li>
+          <li><a href="{{ routes.collections_url }}/compression-socks">Our Compression Wear</a></li>
+          <li><a href="{{ routes.root_url }}pages/our-orthotic-lab">Our Orthotic Lab</a></li>
+          <li><a href="{{ routes.root_url }}pages/medicare">Medicare</a></li>
+          <li><a href="{{ routes.root_url }}pages/education">Education</a></li>
+          <li><a href="{{ routes.root_url }}blogs/news">Blog</a></li>
+          <li><a href="{{ routes.root_url }}pages/catalog">Catalog</a></li>
         </ul>
       </li>
 
@@ -27,18 +27,18 @@
           {{ section.settings.customer_service_label }}
         </button>
         <ul class="utility-bar__dropdown">
-          <li><a href="#">Order Tracking</a></li>
-          <li><a href="#">Shipping Policy</a></li>
-          <li><a href="#">Returns and Refunds</a></li>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Medicare</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="{{ routes.root_url }}pages/customer-service">Order Tracking</a></li>
+          <li><a href="{{ routes.root_url }}pages/customer-service">Shipping Policy</a></li>
+          <li><a href="{{ routes.root_url }}pages/customer-service">Returns and Refunds</a></li>
+          <li><a href="{{ routes.root_url }}pages/faqs">FAQ</a></li>
+          <li><a href="{{ routes.root_url }}pages/medicare">Medicare</a></li>
+          <li><a href="{{ routes.root_url }}pages/customer-service">Contact Us</a></li>
         </ul>
       </li>
 
       <!-- FIND PROVIDER -->
       <li class="utility-bar__item">
-        <a href="#" class="utility-bar__link utility-bar__link--provider-finder">
+        <a href="{{ routes.root_url }}pages/store-locator" class="utility-bar__link utility-bar__link--provider-finder">
           <svg class="utility-bar__icon" width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
             <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/>
           </svg>
@@ -48,7 +48,7 @@
 
       <!-- FOR PROVIDERS -->
       <li class="utility-bar__item utility-bar__item--provider">
-        <a href="#" class="utility-bar__link utility-bar__link--provider">
+        <a href="{{ routes.root_url }}pages/for-providers" class="utility-bar__link utility-bar__link--provider">
           {{ section.settings.provider_label }}
         </a>
       </li>
@@ -65,7 +65,7 @@
 
       <!-- HELP -->
       <li class="utility-bar__item">
-        <a href="#" class="utility-bar__link">
+        <a href="{{ routes.root_url }}pages/help" class="utility-bar__link">
           {{ section.settings.help_label }}
         </a>
       </li>

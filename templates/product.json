@@ -1,0 +1,7 @@
+{
+  "sections": {
+    "details": { "type": "product-details" },
+    "recommendations": { "type": "product-recommendations" }
+  },
+  "order": ["details", "recommendations"]
+}
