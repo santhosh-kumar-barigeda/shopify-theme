@@ -68,14 +68,14 @@
   </head>
 
   <body>
-    {% section 'utility-bar' %}
-    {% section 'header' %}
-    {% section 'announcement-bar' %}
+    {% section 'shared-utility-bar' %}
+    {% section 'shared-header' %}
+    {% section 'shared-announcement-bar' %}
 
     <main id="MainContent">
       {{ content_for_layout }}
     </main>
 
-    {% section 'footer' %}
+    {% section 'shared-footer' %}
   </body>
 </html>

@@ -1,24 +1,24 @@
 {
   "sections": {
-    "hero": { "type": "hero" },
+    "hero": { "type": "home-hero" },
 
-    "shop": { "type": "shop-bar" },
+    "shop": { "type": "shared-shop-bar" },
 
-    "blog": { "type": "blog-grid" },
+    "blog": { "type": "home-blog-grid" },
 
-    "accessories": { "type": "product-carousel" },
+    "accessories": { "type": "home-product-carousel" },
 
-    "women": { "type": "product-carousel" },
+    "women": { "type": "home-product-carousel" },
 
-    "men": { "type": "product-carousel" },
+    "men": { "type": "home-product-carousel" },
 
-    "trust": { "type": "trust-badges" },
+    "trust": { "type": "home-trust-badges" },
 
-    "about": { "type": "about" },
+    "about": { "type": "home-about" },
 
-    "promo": { "type": "promo-blocks" },
+    "promo": { "type": "home-promo-blocks" },
 
-    "newsletter": { "type": "newsletter" }
+    "newsletter": { "type": "home-newsletter" }
   },
   "order": [
     "hero",
