@@ -1,0 +1,90 @@
+<div class="utility-bar">
+  <nav class="utility-bar__nav">
+    <ul class="utility-bar__list">
+
+      <!-- ABOUT -->
+      <li class="utility-bar__item utility-bar__item--dropdown">
+        <button class="utility-bar__link utility-bar__toggle">
+          {{ section.settings.about_label }}
+        </button>
+        <ul class="utility-bar__dropdown">
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Our Shoes</a></li>
+          <li><a href="#">Our Inserts</a></li>
+          <li><a href="#">Our Socks</a></li>
+          <li><a href="#">Our Compression Wear</a></li>
+          <li><a href="#">Our Orthotic Lab</a></li>
+          <li><a href="#">Medicare</a></li>
+          <li><a href="#">Education</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Catalog</a></li>
+        </ul>
+      </li>
+
+      <!-- CUSTOMER SERVICE -->
+      <li class="utility-bar__item utility-bar__item--dropdown">
+        <button class="utility-bar__link utility-bar__toggle">
+          {{ section.settings.customer_service_label }}
+        </button>
+        <ul class="utility-bar__dropdown">
+          <li><a href="#">Order Tracking</a></li>
+          <li><a href="#">Shipping Policy</a></li>
+          <li><a href="#">Returns and Refunds</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Medicare</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </li>
+
+      <!-- FIND PROVIDER -->
+      <li class="utility-bar__item">
+        <a href="#" class="utility-bar__link utility-bar__link--provider-finder">
+          <svg class="utility-bar__icon" width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/>
+          </svg>
+          {{ section.settings.find_provider_label }}
+        </a>
+      </li>
+
+      <!-- FOR PROVIDERS -->
+      <li class="utility-bar__item utility-bar__item--provider">
+        <a href="#" class="utility-bar__link utility-bar__link--provider">
+          {{ section.settings.provider_label }}
+        </a>
+      </li>
+
+      <!-- CONTACT -->
+      <li class="utility-bar__item utility-bar__item--contact">
+        <span class="utility-bar__text">
+          {{ section.settings.phone_text }}
+        </span>
+        <span class="utility-bar__phone">
+          {{ section.settings.phone_number }}
+        </span>
+      </li>
+
+      <!-- HELP -->
+      <li class="utility-bar__item">
+        <a href="#" class="utility-bar__link">
+          {{ section.settings.help_label }}
+        </a>
+      </li>
+
+    </ul>
+  </nav>
+</div>
+
+{% schema %}
+{
+  "name": "UTILITY BAR",
+  "settings": [
+    { "type": "text", "id": "about_label", "label": "About Us", "default": "About Us" },
+    { "type": "text", "id": "customer_service_label", "label": "Customer Service", "default": "Customer Service" },
+    { "type": "text", "id": "find_provider_label", "label": "Find Provider", "default": "Find a Provider" },
+    { "type": "text", "id": "provider_label", "label": "For Providers", "default": "For Providers" },
+    { "type": "text", "id": "phone_text", "label": "Phone Label", "default": "Talk to an Expert:" },
+    { "type": "text", "id": "phone_number", "label": "Phone Number", "default": "866.922.5300" },
+    { "type": "text", "id": "help_label", "label": "Help", "default": "Need Help?" }
+  ]
+}
+{% endschema %}

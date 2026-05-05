@@ -1,0 +1,253 @@
+<header class="header">
+  <div class="header__inner page-width">
+    <!-- Logo -->
+    <a href="{{ routes.root_url }}" class="header__logo-link">
+      <img
+        src="{{ 'img-logo.svg' | asset_url }}"
+        alt="{{ shop.name }}"
+        class="header__logo-img"
+        width="130"
+        height="73"
+        loading="eager"
+      >
+    </a>
+
+    <!-- Main Navigation -->
+    <nav class="header__nav" aria-label="Main navigation">
+      <ul class="header__nav-list">
+        <!-- Women's -->
+        <li class="header__nav-item header__nav-item--has-dropdown">
+          <a href="{{ routes.collections_url }}/womens-shoes" class="header__nav-link">Women's</a>
+          <div class="header__dropdown">
+            <div class="header__dropdown-inner">
+              <div class="header__dropdown-col">
+                <span class="header__dropdown-heading">Women's Shoes</span>
+                <ul class="header__dropdown-list">
+                  <li><a href="{{ routes.collections_url }}/womens-shoes/athletic">Athletic</a></li>
+                  <li><a href="{{ routes.collections_url }}/womens-shoes/quick-fit-hands-free">Quick-Fit | Hands Free</a></li>
+                  <li><a href="{{ routes.collections_url }}/womens-shoes/boots">Boots</a></li>
+                  <li><a href="{{ routes.collections_url }}/womens-shoes/casual">Casual</a></li>
+                  <li><a href="{{ routes.collections_url }}/womens-shoes/double-depth">Double Depth</a></li>
+                  <li><a href="{{ routes.collections_url }}/womens-shoes/dress">Dress</a></li>
+                  <li><a href="{{ routes.collections_url }}/womens-shoes/lightweight">Lightweight</a></li>
+                  <li><a href="{{ routes.collections_url }}/womens-shoes/sandals">Sandals</a></li>
+                  <li><a href="{{ routes.collections_url }}/womens-shoes/slippers">Slippers</a></li>
+                  <li><a href="{{ routes.collections_url }}/womens-shoes/specialty">Specialty</a></li>
+                  <li><a href="{{ routes.collections_url }}/womens-shoes/wool">Wool</a></li>
+                  <li><a href="{{ routes.collections_url }}/womens-shoes/golf">Golf</a></li>
+                  <li><a href="{{ routes.collections_url }}/clearance?gender=womens" class="header__dropdown-link--accent">Clearance</a></li>
+                </ul>
+              </div>
+              <div class="header__dropdown-col">
+                <span class="header__dropdown-heading">Compression Hosiery</span>
+                <ul class="header__dropdown-list">
+                  <li><a href="{{ routes.collections_url }}/womens-compression/anti-embolism">Anti-Embolism</a></li>
+                  <li><a href="{{ routes.collections_url }}/womens-compression/care-solutions">Care Solutions</a></li>
+                  <li><a href="{{ routes.collections_url }}/womens-compression/essentials">Essentials</a></li>
+                  <li><a href="{{ routes.collections_url }}/womens-compression/everyday-style">Everyday Style</a></li>
+                  <li><a href="{{ routes.collections_url }}/womens-compression/opaque">Opaque</a></li>
+                  <li><a href="{{ routes.collections_url }}/womens-compression/sheer">Sheer</a></li>
+                  <li><a href="{{ routes.collections_url }}/womens-compression/therapeutic-sport">Therapeutic Sport</a></li>
+                </ul>
+              </div>
+              <div class="header__dropdown-col">
+                <span class="header__dropdown-heading">Comfort Socks</span>
+                <ul class="header__dropdown-list">
+                  <li><a href="{{ routes.collections_url }}/socks/ankle">Ankle</a></li>
+                  <li><a href="{{ routes.collections_url }}/socks/crew">Crew</a></li>
+                  <li><a href="{{ routes.collections_url }}/socks/no-show">No-Show</a></li>
+                  <li><a href="{{ routes.collections_url }}/socks/over-the-calf">Over-the-Calf</a></li>
+                  <li><a href="{{ routes.collections_url }}/socks/extra-roomy">Extra Roomy</a></li>
+                  <li><a href="{{ routes.collections_url }}/socks/transmet">Transmet</a></li>
+                  <li><a href="{{ routes.collections_url }}/socks/wool">Wool</a></li>
+                </ul>
+              </div>
+              <div class="header__dropdown-col">
+                <span class="header__dropdown-heading">Orthotics</span>
+                <ul class="header__dropdown-list">
+                  <li><a href="/products/gel-insert">Gel Inserts</a></li>
+                  <li><a href="/products/exos-insert">EXOS® Inserts</a></li>
+                  <li><a href="/products/mysupport-custom-orthotics">mySupport™</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- Men's -->
+        <li class="header__nav-item header__nav-item--has-dropdown">
+          <a href="{{ routes.collections_url }}/mens-shoes" class="header__nav-link">Men's</a>
+          <div class="header__dropdown">
+            <div class="header__dropdown-inner">
+              <div class="header__dropdown-col">
+                <span class="header__dropdown-heading">Men's Shoes</span>
+                <ul class="header__dropdown-list">
+                  <li><a href="{{ routes.collections_url }}/mens-shoes/athletic">Athletic</a></li>
+                  <li><a href="{{ routes.collections_url }}/mens-shoes/quick-fit-hands-free">Quick-Fit | Hands Free</a></li>
+                  <li><a href="{{ routes.collections_url }}/mens-shoes/boots">Boots</a></li>
+                  <li><a href="{{ routes.collections_url }}/mens-shoes/casual">Casual</a></li>
+                  <li><a href="{{ routes.collections_url }}/mens-shoes/double-depth">Double Depth</a></li>
+                  <li><a href="{{ routes.collections_url }}/mens-shoes/dress">Dress</a></li>
+                  <li><a href="{{ routes.collections_url }}/mens-shoes/lightweight">Lightweight</a></li>
+                  <li><a href="{{ routes.collections_url }}/mens-shoes/sandals">Sandals</a></li>
+                  <li><a href="{{ routes.collections_url }}/mens-shoes/slippers">Slippers</a></li>
+                  <li><a href="{{ routes.collections_url }}/mens-shoes/specialty">Specialty</a></li>
+                  <li><a href="{{ routes.collections_url }}/mens-shoes/wool">Wool</a></li>
+                  <li><a href="{{ routes.collections_url }}/mens-shoes/golf">Golf</a></li>
+                  <li><a href="{{ routes.collections_url }}/clearance?gender=mens" class="header__dropdown-link--accent">Clearance</a></li>
+                </ul>
+              </div>
+              <div class="header__dropdown-col">
+                <span class="header__dropdown-heading">Compression Hosiery</span>
+                <ul class="header__dropdown-list">
+                  <li><a href="{{ routes.collections_url }}/mens-compression/anti-embolism">Anti-Embolism</a></li>
+                  <li><a href="{{ routes.collections_url }}/mens-compression/care-solutions">Care Solutions</a></li>
+                  <li><a href="{{ routes.collections_url }}/mens-compression/essentials">Essentials</a></li>
+                  <li><a href="{{ routes.collections_url }}/mens-compression/everyday-style">Everyday Style</a></li>
+                  <li><a href="{{ routes.collections_url }}/mens-compression/opaque">Opaque</a></li>
+                  <li><a href="{{ routes.collections_url }}/mens-compression/therapeutic-sport">Therapeutic Sport</a></li>
+                </ul>
+              </div>
+              <div class="header__dropdown-col">
+                <span class="header__dropdown-heading">Comfort Socks</span>
+                <ul class="header__dropdown-list">
+                  <li><a href="{{ routes.collections_url }}/socks/ankle">Ankle</a></li>
+                  <li><a href="{{ routes.collections_url }}/socks/crew">Crew</a></li>
+                  <li><a href="{{ routes.collections_url }}/socks/no-show">No-Show</a></li>
+                  <li><a href="{{ routes.collections_url }}/socks/over-the-calf">Over-the-Calf</a></li>
+                  <li><a href="{{ routes.collections_url }}/socks/extra-roomy">Extra Roomy</a></li>
+                  <li><a href="{{ routes.collections_url }}/socks/transmet">Transmet</a></li>
+                  <li><a href="{{ routes.collections_url }}/socks/wool">Wool</a></li>
+                </ul>
+              </div>
+              <div class="header__dropdown-col">
+                <span class="header__dropdown-heading">Orthotics</span>
+                <ul class="header__dropdown-list">
+                  <li><a href="/products/gel-insert">Gel Inserts</a></li>
+                  <li><a href="/products/exos-insert">EXOS® Inserts</a></li>
+                  <li><a href="/products/mysupport-custom-orthotics">mySupport™</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- Compression & Socks -->
+        <li class="header__nav-item">
+          <a href="{{ routes.collections_url }}/compression-socks" class="header__nav-link">Compression &amp; Socks</a>
+        </li>
+
+        <!-- Accessories -->
+        <li class="header__nav-item header__nav-item--has-dropdown">
+          <a href="{{ routes.collections_url }}/accessories" class="header__nav-link">Accessories</a>
+          <div class="header__dropdown">
+            <div class="header__dropdown-inner">
+              <div class="header__dropdown-col">
+                <span class="header__dropdown-heading">Orthotics</span>
+                <ul class="header__dropdown-list">
+                  <li><a href="/products/gel-insert">Gel Inserts</a></li>
+                  <li><a href="/products/exos-insert">EXOS® Inserts</a></li>
+                  <li><a href="/products/mysupport-custom-orthotics">mySupport™</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- Shoe Advisor -->
+        <li class="header__nav-item header__nav-item--has-dropdown">
+          <a href="/pages/foot-indications" class="header__nav-link">Shoe Advisor</a>
+          <div class="header__dropdown">
+            <div class="header__dropdown-inner">
+              <div class="header__dropdown-col">
+                <span class="header__dropdown-heading">Find shoes for:</span>
+                <ul class="header__dropdown-list">
+                  <li><a href="/pages/foot-indications/diabetes">Diabetes</a></li>
+                  <li><a href="/pages/foot-indications/plantar-fasciitis">Plantar Fasciitis</a></li>
+                  <li><a href="/pages/foot-indications/stability">Stability</a></li>
+                  <li><a href="/pages/foot-indications/bunions">Bunions</a></li>
+                </ul>
+              </div>
+              <div class="header__dropdown-col">
+                <span class="header__dropdown-heading">&nbsp;</span>
+                <ul class="header__dropdown-list">
+                  <li><a href="/pages/foot-indications/ankle-instability">Ankle Stability</a></li>
+                  <li><a href="/pages/foot-indications/charcot">Charcot</a></li>
+                  <li><a href="/pages/foot-indications/edema">Edema</a></li>
+                  <li><a href="/pages/foot-indications/hammertoes">Hammertoes</a></li>
+                </ul>
+              </div>
+              <div class="header__dropdown-col">
+                <span class="header__dropdown-heading">&nbsp;</span>
+                <ul class="header__dropdown-list">
+                  <li><a href="/pages/foot-indications/high-instep">High Insteps</a></li>
+                  <li><a href="/pages/foot-indications/internal-brace">Internal Brace</a></li>
+                  <li><a href="/pages/foot-indications/pronation-supination">Pronation/Supination</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- Sale -->
+        <li class="header__nav-item">
+          <a href="{{ routes.collections_url }}/sale" class="header__nav-link header__nav-link--sale">Sale</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Header Actions -->
+    <div class="header__actions">
+      <!-- Search -->
+      <form action="{{ routes.search_url }}" method="get" class="header__search-form">
+        <input
+          type="search"
+          name="q"
+          placeholder="Search"
+          class="header__search-input"
+          aria-label="Search"
+        >
+        <button type="submit" class="header__search-btn" aria-label="Search">
+          <span class="material-symbols-outlined">search</span>
+        </button>
+      </form>
+
+      <!-- Account -->
+      <a href="{{ routes.account_url }}" class="header__action-link" aria-label="Account">
+        <span class="material-symbols-outlined">person</span>
+        <span class="header__action-label">Account</span>
+      </a>
+
+      <!-- Cart -->
+      <a href="{{ routes.cart_url }}" class="header__action-link header__cart-link" aria-label="Cart">
+        <span class="material-symbols-outlined">shopping_cart</span>
+        <span class="header__action-label">My Cart</span>
+        {% if cart.item_count > 0 %}
+          <span class="header__cart-count">{{ cart.item_count }}</span>
+        {% endif %}
+      </a>
+    </div>
+  </div>
+</header>
+
+{% schema %}
+{
+  "name": "HEADER",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo Image"
+    },
+    {
+      "type": "range",
+      "id": "logo_width",
+      "min": 100,
+      "max": 300,
+      "step": 10,
+      "default": 200,
+      "label": "Logo Width (px)"
+    }
+  ]
+}
+{% endschema %}

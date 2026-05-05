@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="{{ request.locale.iso_code }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#003865">
+    <link rel="canonical" href="{{ canonical_url }}">
+
+    <title>
+      {{ page_title }}
+      {%- unless page_title contains shop.name %} – {{ shop.name }}{% endunless %}
+    </title>
+
+    {% if page_description %}
+      <meta name="description" content="{{ page_description | escape }}">
+    {% endif %}
+
+    {{ content_for_header }}
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+
+    <style>
+      @font-face {
+        font-family: 'Lato';
+        src: url({{ 'font-lato-thin.ttf' | asset_url | json }}) format('truetype');
+        font-weight: 100;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: 'Lato';
+        src: url({{ 'font-lato-light.ttf' | asset_url | json }}) format('truetype');
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: 'Lato';
+        src: url({{ 'font-lato-regular.ttf' | asset_url | json }}) format('truetype');
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: 'Lato';
+        src: url({{ 'font-lato-italic.ttf' | asset_url | json }}) format('truetype');
+        font-weight: 400;
+        font-style: italic;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: 'Lato';
+        src: url({{ 'font-lato-bold.ttf' | asset_url | json }}) format('truetype');
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: 'Lato';
+        src: url({{ 'font-lato-black.ttf' | asset_url | json }}) format('truetype');
+        font-weight: 900;
+        font-style: normal;
+        font-display: swap;
+      }
+    </style>
+
+    {{ 'base.css' | asset_url | stylesheet_tag }}
+  </head>
+
+  <body>
+    {% section 'utility-bar' %}
+    {% section 'header' %}
+    {% section 'announcement-bar' %}
+
+    <main id="MainContent">
+      {{ content_for_layout }}
+    </main>
+
+    {% section 'footer' %}
+  </body>
+</html>

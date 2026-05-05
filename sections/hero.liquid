@@ -1,0 +1,54 @@
+<section class="hero">
+  <div class="hero__inner">
+    <a href="{{ section.settings.hero_1_link }}" class="hero__banner hero__banner--primary">
+      <img
+        src="{{ 'img-hero-banner-1.jpg' | asset_url }}"
+        alt="{{ section.settings.hero_1_alt | default: 'Shop Womens Shoes' }}"
+        class="hero__img"
+        width="1024"
+        height="430"
+        loading="eager"
+      >
+    </a>
+    <a href="{{ section.settings.hero_2_link }}" class="hero__banner hero__banner--secondary">
+      <img
+        src="{{ 'img-hero-banner-2.jpg' | asset_url }}"
+        alt="{{ section.settings.hero_2_alt | default: 'Shoe Finder' }}"
+        class="hero__img"
+        width="500"
+        height="430"
+        loading="eager"
+      >
+    </a>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Hero",
+  "settings": [
+    {
+      "type": "url",
+      "id": "hero_1_link",
+      "label": "Left Banner Link"
+    },
+    {
+      "type": "text",
+      "id": "hero_1_alt",
+      "label": "Left Banner Alt Text",
+      "default": "Shop Womens Shoes"
+    },
+    {
+      "type": "url",
+      "id": "hero_2_link",
+      "label": "Right Banner Link"
+    },
+    {
+      "type": "text",
+      "id": "hero_2_alt",
+      "label": "Right Banner Alt Text",
+      "default": "Shoe Finder"
+    }
+  ]
+}
+{% endschema %}

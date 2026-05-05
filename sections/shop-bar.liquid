@@ -1,0 +1,56 @@
+<section class="shop-bar">
+  <div class="shop-bar__inner">
+    <span class="shop-bar__label">SHOP:</span>
+    <ul class="shop-bar__links">
+      {% if section.blocks.size > 0 %}
+        {% for block in section.blocks %}
+          <li {{ block.shopify_attributes }}>
+            <a href="{{ block.settings.link }}" class="shop-bar__link">{{ block.settings.text }}</a>
+          </li>
+        {% endfor %}
+      {% else %}
+        <li><a href="{{ routes.collections_url }}/womens-shoes" class="shop-bar__link">Women's Shoes</a></li>
+        <li><a href="{{ routes.collections_url }}/mens-shoes" class="shop-bar__link">Men's Shoes</a></li>
+        <li><a href="{{ routes.collections_url }}/diabetic-shoes" class="shop-bar__link">Diabetic Shoes</a></li>
+        <li><a href="{{ routes.collections_url }}/diabetic-socks" class="shop-bar__link">Diabetic Socks</a></li>
+      {% endif %}
+    </ul>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Shop Bar",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "link",
+      "name": "Link",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Link Text",
+          "default": "Women's Shoes"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link URL"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Shop Bar",
+      "blocks": [
+        { "type": "link", "settings": { "text": "Women's Shoes", "link": "/collections/womens-shoes" } },
+        { "type": "link", "settings": { "text": "Men's Shoes", "link": "/collections/mens-shoes" } },
+        { "type": "link", "settings": { "text": "Diabetic Shoes", "link": "/collections/diabetic-shoes" } },
+        { "type": "link", "settings": { "text": "Diabetic Socks", "link": "/collections/diabetic-socks" } }
+      ]
+    }
+  ]
+}
+{% endschema %}
